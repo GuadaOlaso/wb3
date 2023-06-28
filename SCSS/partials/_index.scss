@@ -1,0 +1,57 @@
+// Diseño del Index //
+/*Estilo de Index*/
+main {
+    @include flex (column, center, center);
+    h2 {
+        margin: 0%;
+        padding: 0%;
+    }
+    p {
+        text-align: center;
+        width: 90%;
+        margin-bottom: 3%;
+    }
+    img {
+        max-height: 100%;
+        max-width: 100%;
+        padding-top: 0%;
+        margin-top: 0%;
+        margin-right: 0%;
+        margin-left: 0%;
+        margin-bottom: 2%;
+    }
+    }
+    .valores {
+        display: grid;
+        grid-template-columns: repeat(3,30%);
+        grid-template-rows: 70% 30%;
+        grid-template-areas: 
+        "imgsustentabilidad imgarmnia imgcalma"
+        "sustentabilidad armonia calma";
+        justify-items: center;
+        align-items: center;
+        justify-content: space-evenly;
+        align-content: center;
+        img {
+            width: 100%;
+            height: 100%;
+        }
+    }    
+    .imgSustentabilidad {
+        grid-area: imgsustentabilidad;
+    }
+    .imgArmonia {
+        grid-area: imgarmonia;
+    }
+    .imgCalma {
+        grid-area: imgcalma;
+    }
+    .Sustentabilidad {
+        grid-area: sustentabilidad;
+    }
+    .Armonia {
+        grid-area: armonia;
+    }
+    .Calma {
+        grid-area: calma;
+    }

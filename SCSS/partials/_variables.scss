@@ -1,0 +1,19 @@
+// Colores Disponibles
+$Gris : #404041;
+$ColorFondo: #efeae4;
+$ColorHeader: #d6d5ca;
+$GrisHover: #5e5e5f;
+$ColorFooter: #C9A88A;
+$ColorNosotras: #e6d7c5;
+
+// Tipografias Disponibles
+$Tipografia: "Adam Light";
+$TipografiaNegrita: "Adam Bold";
+
+// Mixin Flexbox 
+@mixin flex ($direccion, $justify, $align){
+    display: flex;
+    flex-direction: $direccion;
+    justify-content: $justify;
+    align-items: $align;
+}
