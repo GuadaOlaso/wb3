@@ -139,7 +139,7 @@ main {
   flex-direction: column;
   justify-content: center;
   align-items: center; }
-  main h2 {
+  main .autor {
     margin: 0%;
     padding: 0%; }
   main p {
@@ -227,11 +227,12 @@ main {
     margin: 4%;
     list-style-type: none;
     font-size: 2.5rem;
-    text-align: justify; }
+    text-align: justify;
+    padding: 0%; }
   .velas ul, .bombondifusor ul {
     display: flex;
     flex-direction: column;
-    justify-content: end;
+    justify-content: start;
     align-items: start;
     margin: 4%;
     list-style-type: none;

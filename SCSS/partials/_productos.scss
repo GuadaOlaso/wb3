@@ -24,13 +24,15 @@
         list-style-type: none;
         font-size: 2.5rem;
         text-align: justify;
+        padding: 0%;
     }
     ul {
-        @include flex (column, end, start);
+        @include flex (column, start, start);
         margin: 4%;
         list-style-type: none;
         font-size: 2.5rem;
         text-align: justify;
+
     }
 }
 

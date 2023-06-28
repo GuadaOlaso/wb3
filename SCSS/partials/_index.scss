@@ -2,7 +2,7 @@
 /*Estilo de Index*/
 main {
     @include flex (column, center, center);
-    h2 {
+    .autor {
         margin: 0%;
         padding: 0%;
     }
