@@ -10,7 +10,7 @@ main {
         margin-bottom: 3%;
     }
     .formulario {
-        @include flex (row, space-evenly, center);
+        @include flex (row, space-evenly, left);   
         width: 100%;
         margin-bottom: 0%;
         background-color: $ColorNosotras;

@@ -3,19 +3,22 @@
 
 .aromas {
     padding-top: 3%;
+    text-align: justify;
 }
 
 .coco {
+    @include flex (row, justify, center);
     padding-left: 3%;
-    text-align: justify;
     width: 90%;
     padding-top: 0%;
+    margin-bottom: 2%;
     img {
         width: 150%
     }
-    @include flex (row, center, center);
     .cocotexto {
         @include flex (column, center, center);
+        p {text-align: justify;
+        }
     }
     &:hover {
         background-color: $ColorNosotras;
@@ -24,16 +27,19 @@
 }
 .lavanda {
     padding-left: 3%;
+    padding-right: 3%;
     text-align: justify;
     width: 90%;
     padding-top: 0%;
-    //Falta ocultar la imagen mobileen web y web en mobile
-    img {
+    margin-bottom: 2%;
+    @include flex (row, center, center);
+    .lavandaweb img {
         width: 25%
     }
-    @include flex (row, center, center);
     .lavandatexto {
         @include flex (column, center, center);
+        p {text-align: justify;
+        }
     }
     &:hover {
         background-color: $ColorNosotras;
@@ -41,5 +47,18 @@
     }
 }
 .jazmin, .azahar, .lima {
-    @extend .lavanda
+    @extend .lavanda;
+}
+.jazmintexto, .azahartexto, .limatexto {
+    @extend .lavandatexto;
+}
+.jazmin {
+    img {
+        width: 20%
+    }
+}
+.lima {
+    img {
+        width: 30%
+    }
 }

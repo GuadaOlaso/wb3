@@ -125,7 +125,7 @@ footer {
   font-family: "Adam Bold";
   font-size: 2rem;
   border: #404041;
-  padding: 2% 4%;
+  padding: 1% 2%;
   color: whitesmoke;
   margin: 2%;
   border-radius: 15%;
@@ -260,17 +260,18 @@ main {
 
 /*Estilo de Aromas*/
 .aromas {
-  padding-top: 3%; }
+  padding-top: 3%;
+  text-align: justify; }
 
 .coco {
-  padding-left: 3%;
-  text-align: justify;
-  width: 90%;
-  padding-top: 0%;
   display: flex;
   flex-direction: row;
-  justify-content: center;
-  align-items: center; }
+  justify-content: justify;
+  align-items: center;
+  padding-left: 3%;
+  width: 90%;
+  padding-top: 0%;
+  margin-bottom: 2%; }
   .coco img {
     width: 150%; }
   .coco .cocotexto {
@@ -278,29 +279,41 @@ main {
     flex-direction: column;
     justify-content: center;
     align-items: center; }
+    .coco .cocotexto p {
+      text-align: justify; }
   .coco:hover {
     background-color: #e6d7c5;
     font-family: "Adam Bold"; }
 
 .lavanda, .jazmin, .azahar, .lima {
   padding-left: 3%;
+  padding-right: 3%;
   text-align: justify;
   width: 90%;
   padding-top: 0%;
+  margin-bottom: 2%;
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center; }
-  .lavanda img, .jazmin img, .azahar img, .lima img {
+  .lavanda .lavandaweb img, .jazmin .lavandaweb img, .azahar .lavandaweb img, .lima .lavandaweb img {
     width: 25%; }
-  .lavanda .lavandatexto, .jazmin .lavandatexto, .azahar .lavandatexto, .lima .lavandatexto {
+  .lavanda .lavandatexto, .jazmin .lavandatexto, .azahar .lavandatexto, .lima .lavandatexto, .lavanda .jazmintexto, .jazmin .jazmintexto, .azahar .jazmintexto, .lima .jazmintexto, .lavanda .azahartexto, .jazmin .azahartexto, .azahar .azahartexto, .lima .azahartexto, .lavanda .limatexto, .jazmin .limatexto, .azahar .limatexto, .lima .limatexto {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center; }
+    .lavanda .lavandatexto p, .jazmin .lavandatexto p, .azahar .lavandatexto p, .lima .lavandatexto p, .lavanda .jazmintexto p, .jazmin .jazmintexto p, .azahar .jazmintexto p, .lima .jazmintexto p, .lavanda .azahartexto p, .jazmin .azahartexto p, .azahar .azahartexto p, .lima .azahartexto p, .lavanda .limatexto p, .jazmin .limatexto p, .azahar .limatexto p, .lima .limatexto p {
+      text-align: justify; }
   .lavanda:hover, .jazmin:hover, .azahar:hover, .lima:hover {
     background-color: #e6d7c5;
     font-family: "Adam Bold"; }
+
+.jazmin img {
+  width: 20%; }
+
+.lima img {
+  width: 30%; }
 
 /*Estilo de Contacto*/
 main {
@@ -314,7 +327,7 @@ main {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
-    align-items: center;
+    align-items: left;
     width: 100%;
     margin-bottom: 0%;
     background-color: #e6d7c5; }
@@ -342,8 +355,7 @@ main {
 
 /*Estilo de Gracias*/
 main {
-  padding: 0%;
-  /*Falta ocultar imagen mobile de web y web de mobile*/ }
+  padding: 0%; }
   main h2 {
     margin: 5%;
     font-size: 5rem; }
@@ -351,7 +363,143 @@ main {
     padding-right: 5%;
     padding-left: 5%;
     font-size: 3.5rem;
-    margin: 1%; }
+    margin: 1%;
+    text-align: center; }
   main img {
     width: 100%;
-    margin-top: 2%; }
+    margin-top: 2%;
+    margin-bottom: 0%; }
+
+/*Web responsive*/
+@media only screen and (min-width: 501px) {
+  .graciasmobile, .lavandamobile, .jazminmobile, .azaharmobile, .limamobile {
+    display: none; } }
+
+/*Nobile responsive*/
+@media only screen and (max-width: 500px) {
+  /*Estilo de Header Mobile*/
+  header {
+    flex-direction: column;
+    font-size: 2rem;
+    padding-bottom: 1%;
+    align-items: end;
+    position: sticky; }
+    header img {
+      width: 50%;
+      margin-left: 30%;
+      margin-top: 10%; }
+      header img:hover {
+        width: 60%; }
+    header nav {
+      width: 95%; }
+  /*Estilo de Main Mobile*/
+  main h1 {
+    font-size: 4rem; }
+  main h2 {
+    font-size: 3rem;
+    margin-top: 2%;
+    margin-bottom: 2%; }
+  main p {
+    font-size: 3rem;
+    text-align: justify; }
+  main .valores {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+    grid-template-rows: 100%;
+    grid-template-areas: "sustentabilidad armonia calma";
+    justify-items: center;
+    align-items: center;
+    justify-content: space-between;
+    align-content: center;
+    margin-top: 2%;
+    margin-bottom: 2%; }
+  main .valores img {
+    display: none; }
+  main .Sustentabilidad, main .Armonia, main .Calma {
+    font-size: 3rem; }
+  /*Estilo de Footer Mobile*/
+  footer {
+    padding-top: 2%;
+    padding-right: 2%;
+    padding-bottom: 2%; }
+    footer h4 {
+      display: none; }
+    footer .imagenFooter {
+      display: none; }
+    footer .ulFooter {
+      width: 200%;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      align-items: center; }
+    footer p {
+      padding-top: 2%;
+      font-size: 1.5rem;
+      text-align: right; }
+  /*Estilo de Nosotros Mobile*/
+  main .nosotros {
+    flex-direction: column;
+    font-family: "Adam Bold"; }
+  main .pili, main .guada, main .clari {
+    margin: 1%; }
+  main .somos, main .hacemos {
+    margin: 8%; }
+  /*Estilo de Producto Mobile*/
+  .velas, .bombondifusor {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-items: center; }
+    .velas .vidrio img, .bombondifusor .vidrio img {
+      width: 100%; }
+    .velas .ceramica img, .bombondifusor .ceramica img {
+      width: 100%; }
+    .velas ul, .bombondifusor ul {
+      font-family: "Adam Bold"; }
+  .bombondifusor {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-items: center; }
+    .bombondifusor .bombon img {
+      width: 100%; }
+    .bombondifusor .difusor img {
+      width: 100%; }
+    .bombondifusor ul {
+      font-family: "Adam Bold"; }
+  /*Estilo de Aromas Mobile*/
+  .nuestrosaromas {
+    margin-top: 10%;
+    margin-bottom: 5%; }
+  .coco, .lavanda, .jazmin, .azahar, .lima, .jazmin, .azahar, .lima {
+    flex-direction: column; }
+    .coco img, .lavanda img, .jazmin img, .azahar img, .lima img, .jazmin img, .azahar img, .lima img {
+      width: 100%; }
+  .lavandaweb, .jazminweb, .azaharweb, .limaweb {
+    display: none; }
+  /*Estilo del Form Contacto Mobile*/
+  main .pedido {
+    margin-top: 10%; }
+  main .formulario {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+  main .formulariodatos, main .formulariopedido {
+    align-items: center;
+    width: 80%; }
+  main .formulariopedido {
+    align-items: center;
+    width: 80%; }
+  main select {
+    width: 80%; }
+  main .botonformulario {
+    text-align: center; }
+  /*Estilo de Gracias*/
+  main .gracias {
+    margin: 10%;
+    margin-bottom: 0; }
+  main .graciasweb {
+    display: none; } }

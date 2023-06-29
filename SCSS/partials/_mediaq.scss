@@ -1,0 +1,212 @@
+//Web responsive
+/*Web responsive*/
+
+@media only screen and (min-width:501px) {
+.graciasmobile {
+    display: none;
+}
+.lavandamobile, .jazminmobile, .azaharmobile, .limamobile {
+    @extend .graciasmobile;
+}
+}
+
+//Mobileresponsive
+/*Nobile responsive*/
+
+@media only screen and (max-width:500px) {
+
+    //Estilo de Header Mobile
+    /*Estilo de Header Mobile*/
+
+    header{
+        flex-direction: column;
+        font-size: 2rem;
+        padding-bottom: 1%;
+        align-items: end;
+        position: sticky;
+        img {
+            width: 50%; 
+            margin-left: 30%;
+            margin-top: 10%;
+            &:hover {
+                width: 60%;
+            }
+        }
+        nav {
+            width: 95%; 
+        }
+    }
+  
+    //Estilo de Main Mobile*/
+    /*Estilo de Main Mobile*/
+
+    main {
+        h1 {
+            font-size: 4rem; 
+        }
+        h2 {
+            font-size: 3rem; 
+            margin-top: 2%;
+            margin-bottom: 2%;
+        }
+        p {
+            font-size: 3rem;
+            text-align: justify;
+        }
+        .valores {
+            display: grid;
+            grid-template-columns: 1.5fr 1fr;
+            grid-template-rows: 100%;
+            grid-template-areas: 
+            "sustentabilidad armonia calma";
+            justify-items: center;
+            align-items: center;
+            justify-content: space-between;
+            align-content:center;
+            margin-top: 2%;
+            margin-bottom: 2%;
+        }
+        .valores img {
+            display: none;
+        }
+        .Sustentabilidad,.Armonia, .Calma {
+            font-size: 3rem;
+        }
+    }
+
+    //Estilo de Footer Mobile*/
+    /*Estilo de Footer Mobile*/
+
+    footer{   
+        padding-top: 2%;
+        padding-right: 2%;
+        padding-bottom: 2%;
+        h4{
+            display: none;
+        }
+        .imagenFooter{
+            display: none;
+        }
+        .ulFooter {
+            width: 200%;
+            @include flex (row, space-around, center);
+        }
+        p {
+            padding-top: 2%;
+            font-size: 1.5rem;
+            text-align: right;
+        }
+    }
+
+//Estilo de Nosotros Mobile
+/*Estilo de Nosotros Mobile*/
+
+main {
+    .nosotros {
+        flex-direction: column;
+        font-family: $TipografiaNegrita;
+    }
+    .pili {
+        margin: 1%; 
+    }
+    .guada, .clari {
+        @extend .pili;
+    }
+.somos {
+    margin: 8%;
+}
+.hacemos {
+    @extend .somos;
+}
+}
+
+//Estilo de Producto Mobile
+/*Estilo de Producto Mobile*/
+
+.velas {
+    @include flex (column, center, center);
+    align-items: center;
+    .vidrio img{
+        width: 100%;
+    }
+    .ceramica img{
+        width: 100%;
+    }
+    ul {
+        font-family: $TipografiaNegrita;
+    }
+}
+
+.bombondifusor {
+    @include flex (column, center, center);
+    align-items: center;
+    .bombon img{
+        width: 100%;
+    }
+    .difusor img{
+        width: 100%;
+    }
+    ul {
+        font-family: $TipografiaNegrita;
+    }
+}
+
+//Estilo de Aromas Mobile*/
+/*Estilo de Aromas Mobile*/
+
+.nuestrosaromas {
+    margin-top: 10%;
+    margin-bottom: 5%; 
+}
+.coco, .lavanda, .jazmin, .azahar, .lima {
+    flex-direction: column;
+    img {
+        width: 100%;
+    }
+}
+.lavandaweb, .jazminweb, .azaharweb, .limaweb {
+    display: none;
+}
+
+//Estilo del Form Contacto Mobile*/
+/*Estilo del Form Contacto Mobile*/
+main {
+    .pedido {
+        margin-top: 10%;
+    }
+    .formulario {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .formulariodatos {
+        align-items: center;
+        width: 80%;
+    }
+    .formulariopedido
+    {
+        align-items: center;
+        width: 80%;
+    }
+    select {
+        width: 80%;
+    }
+    .botonformulario {
+        text-align: center;
+    }
+    }
+
+    //Estilo de Gracias
+    /*Estilo de Gracias*/
+
+    main {
+        .gracias {
+            margin: 10%;
+            margin-bottom: 0;
+        }
+        .graciasweb {
+            display: none;
+        }
+    }
+} 
