@@ -48,10 +48,19 @@ main {
     }
     .Sustentabilidad {
         grid-area: sustentabilidad;
+        &:hover {
+            color: $GrisHover;
+        }
     }
     .Armonia {
         grid-area: armonia;
+        &:hover {
+            color: $GrisHover;
+        }
     }
     .Calma {
         grid-area: calma;
+        &:hover {
+            color: $GrisHover;
+        }
     }

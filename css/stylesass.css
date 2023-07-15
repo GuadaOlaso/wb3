@@ -1,7 +1,7 @@
 /*Estilo de fuente*/
 @font-face {
-  font-family: "Adam Light";
-  src: url("../Media/Adam/Adam-Light.ttf"); }
+  font-family: "Adam Medium";
+  src: url("../Media/Adam/Adam-Medium.ttf"); }
 
 @font-face {
   font-family: "Adam Bold";
@@ -14,7 +14,7 @@
 
 html {
   height: 100%;
-  font-family: "Adam Light";
+  font-family: "Adam Medium";
   color: #404041;
   font-size: 62.5%; }
 
@@ -89,7 +89,7 @@ footer {
     text-align: center;
     padding-bottom: 2%; }
   footer .footerContacto {
-    width: 30%;
+    width: 40%;
     padding-top: 2%; }
     footer .footerContacto h4 {
       font-size: 2.5rem;
@@ -179,12 +179,18 @@ main {
 
 .Sustentabilidad {
   grid-area: sustentabilidad; }
+  .Sustentabilidad:hover {
+    color: #5e5e5f; }
 
 .Armonia {
   grid-area: armonia; }
+  .Armonia:hover {
+    color: #5e5e5f; }
 
 .Calma {
   grid-area: calma; }
+  .Calma:hover {
+    color: #5e5e5f; }
 
 /*Estilo de Nosotros*/
 main {
@@ -216,8 +222,12 @@ main {
   grid-template-columns: 50% 50%;
   grid-template-rows: 40% 10% 10% 30% 10%;
   justify-content: center; }
-  .velas .vidrio img, .bombondifusor .vidrio img {
+  .velas .vidrio:hover, .bombondifusor .vidrio:hover, .bombondifusor .bombon:hover, .bombondifusor .difusor:hover {
+    width: 105%; }
+  .velas .vidrio img, .bombondifusor .vidrio img, .bombondifusor .bombon img, .bombondifusor .difusor img {
     width: 40%; }
+  .velas .ceramica:hover, .bombondifusor .ceramica:hover {
+    width: 105%; }
   .velas .ceramica img, .bombondifusor .ceramica img {
     width: 38%; }
   .velas h2, .bombondifusor h2 {
@@ -340,10 +350,10 @@ main {
     font-size: 3rem;
     border-radius: 2%;
     border-width: thin;
-    font-family: "Adam Light";
+    font-family: "Adam Medium";
     width: 40%; }
   main label {
-    font-family: "Adam Light";
+    font-family: "Adam Medium";
     font-size: 3rem; }
   main input, main select {
     font-family: "Adam Bold";
@@ -371,12 +381,74 @@ main {
     margin-bottom: 0%; }
 
 /*Web responsive*/
-@media only screen and (min-width: 501px) {
+@media only screen and (min-width: 1001px) {
   .graciasmobile, .lavandamobile, .jazminmobile, .azaharmobile, .limamobile {
     display: none; } }
 
+/*Tablet responsive*/
+@media only screen and (min-width: 701px) and (max-width: 1000px) {
+  /*Estilo de Header Tablet*/
+  header nav {
+    width: 70%; }
+  footer .footerContacto {
+    width: 50%; }
+  /*Estilo de Nosotros Tablet*/
+  main p {
+    text-align: justify; }
+  main .nosotros {
+    flex-direction: column;
+    font-family: "Adam Bold";
+    padding: 5%; }
+  /*Estilo de Producto Tablet*/
+  .velas, .bombondifusor {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-items: center; }
+    .velas .vidrio img, .bombondifusor .vidrio img, .bombondifusor .bombon img, .bombondifusor .difusor img {
+      width: 100%; }
+    .velas .ceramica img, .bombondifusor .ceramica img {
+      width: 100%; }
+    .velas ul, .bombondifusor ul {
+      font-family: "Adam Bold"; }
+  .bombondifusor {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-items: center; }
+    .bombondifusor .bombon img {
+      width: 100%; }
+    .bombondifusor .difusor img {
+      width: 100%; }
+    .bombondifusor ul {
+      font-family: "Adam Bold"; }
+  /*Estilo de Aromas Tablet*/
+  .nuestrosaromas {
+    margin-top: 10%;
+    margin-bottom: 5%; }
+  .coco {
+    flex-direction: column;
+    padding-right: 3%; }
+    .coco img {
+      width: 100%; }
+  .lavanda, .jazmin, .azahar, .lima, .jazmin, .azahar, .lima {
+    flex-direction: column; }
+    .lavanda img, .jazmin img, .azahar img, .lima img, .jazmin img, .azahar img, .lima img {
+      width: 100%; }
+  .lavandaweb, .jazminweb, .azaharweb, .limaweb {
+    display: none; }
+  /*Estilo de Gracias Tablet*/
+  main .gracias {
+    margin: 5%; }
+  main p {
+    text-align: center; }
+  main .graciasweb {
+    display: none; } }
+
 /*Nobile responsive*/
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 700px) {
   /*Estilo de Header Mobile*/
   header {
     flex-direction: column;
@@ -451,7 +523,7 @@ main {
     justify-content: center;
     align-items: center;
     align-items: center; }
-    .velas .vidrio img, .bombondifusor .vidrio img {
+    .velas .vidrio img, .bombondifusor .vidrio img, .bombondifusor .bombon img, .bombondifusor .difusor img {
       width: 100%; }
     .velas .ceramica img, .bombondifusor .ceramica img {
       width: 100%; }
@@ -497,7 +569,7 @@ main {
     width: 80%; }
   main .botonformulario {
     text-align: center; }
-  /*Estilo de Gracias*/
+  /*Estilo de Gracias Mobile*/
   main .gracias {
     margin: 10%;
     margin-bottom: 0; }

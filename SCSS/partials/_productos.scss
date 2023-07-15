@@ -9,11 +9,21 @@
     grid-template-columns: 50% 50%;
     grid-template-rows: 40% 10% 10% 30% 10%;
     justify-content:  center;
-    .vidrio img {
-        width: 40%;
+    .vidrio {
+        &:hover{
+            width: 105%;
+        }
+        img {
+            width: 40%;
+        }
     }
-    .ceramica img {
-        width: 38%;
+    .ceramica {
+        &:hover{
+            width: 105%;
+        }
+        img {
+            width: 38%;
+        }
     }
     h2 {
         margin: 3%;
@@ -38,11 +48,17 @@
 
 .bombondifusor {
     @extend .velas;
-    .bombon img {
-        width: 40.5%;
+    .bombon {
+        @extend .vidrio;
+        img {
+            width: 40.5%;
+        }
     }
-    .difusor img {
-        width: 38%;
+    .difusor {
+        @extend .vidrio;
+        img {
+            width: 38%;
+        }
     }
 }
 

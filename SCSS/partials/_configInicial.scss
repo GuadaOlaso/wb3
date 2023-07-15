@@ -1,8 +1,8 @@
 // Estilo Fuentes
 /*Estilo de fuente*/
 @font-face {
-    font-family: "Adam Light";
-    src: url("../Media/Adam/Adam-Light.ttf");
+    font-family: "Adam Medium";
+    src: url("../Media/Adam/Adam-Medium.ttf");
  }
  
  @font-face{
@@ -98,7 +98,7 @@ footer{
         padding-bottom: 2%;
     }
     .footerContacto {
-        width: 30%;
+        width: 40%;
         padding-top: 2%;    
         h4 {    
             font-size: 2.5rem;
