@@ -555,24 +555,26 @@ main {
   .lavandaweb, .jazminweb, .azaharweb, .limaweb {
     display: none; }
   /*Estilo del Form Contacto Mobile*/
-  main .pedido {
-    margin-top: 10%;
-    margin-bottom: 10%; }
-  main .formulario {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center; }
-  main .formulariodatos, main .formulariopedido {
-    align-items: center;
-    width: 80%; }
-  main .formulariopedido {
-    align-items: center;
-    width: 80%; }
-  main select {
-    width: 80%; }
-  main .botonformulario {
-    text-align: center; }
+  main {
+    padding-bottom: 10%; }
+    main .pedido {
+      margin-top: 10%;
+      margin-bottom: 10%; }
+    main .formulario {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center; }
+    main .formulariodatos, main .formulariopedido {
+      align-items: center;
+      width: 80%; }
+    main .formulariopedido {
+      align-items: center;
+      width: 80%; }
+    main select {
+      width: 80%; }
+    main .botonformulario {
+      text-align: center; }
   /*Estilo de Gracias Mobile*/
   main .gracias {
     margin: 10%;
