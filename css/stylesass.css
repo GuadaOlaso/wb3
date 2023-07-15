@@ -322,7 +322,10 @@ main {
 .jazmin img {
   width: 20%; }
 
-.lima img, .azahar img {
+.azahar img {
+  width: 25%; }
+
+.lima img {
   width: 30%; }
 
 /*Estilo de Contacto*/
@@ -499,7 +502,7 @@ main {
     footer .imagenFooter {
       display: none; }
     footer .ulFooter {
-      width: 200%;
+      width: 125%;
       display: flex;
       flex-direction: row;
       justify-content: space-around;

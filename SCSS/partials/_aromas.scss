@@ -53,12 +53,17 @@
 .jazmintexto, .azahartexto, .limatexto {
     @extend .lavandatexto;
 }
-.jazmin {
+.jazmin  {
     img {
         width: 20%
     }
 }
-.lima, .azahar {
+.azahar  {
+    img {
+        width: 25%
+    }
+}
+.lima {
     img {
         width: 30%
     }

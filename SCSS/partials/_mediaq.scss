@@ -15,7 +15,7 @@
 
 @media only screen and (min-width:701px) and (max-width:1000px) {
 
-    //Estilo de Header Tablt
+    //Estilo de Header Tablet
     /*Estilo de Header Tablet*/
     
     header nav {
@@ -189,7 +189,7 @@
             display: none;
         }
         .ulFooter {
-            width: 200%;
+            width: 125%;
             @include flex (row, space-around, center);
         }
         p {
