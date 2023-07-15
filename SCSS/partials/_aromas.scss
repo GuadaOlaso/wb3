@@ -33,12 +33,13 @@
     padding-top: 0%;
     margin-bottom: 2%;
     @include flex (row, center, center);
-    .lavandaweb img {
+    .lavandaweb {
         width: 25%
     }
     .lavandatexto {
         @include flex (column, center, center);
-        p {text-align: justify;
+        p {
+            text-align: justify;
         }
     }
     &:hover {
@@ -57,7 +58,7 @@
         width: 20%
     }
 }
-.lima {
+.lima, .azahar {
     img {
         width: 30%
     }
