@@ -556,7 +556,8 @@ main {
     display: none; }
   /*Estilo del Form Contacto Mobile*/
   main .pedido {
-    margin-top: 10%; }
+    margin-top: 10%;
+    margin-bottom: 10%; }
   main .formulario {
     display: flex;
     flex-direction: column;
