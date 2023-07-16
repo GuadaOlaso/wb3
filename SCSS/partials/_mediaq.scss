@@ -43,6 +43,9 @@
     //Estilo de Producto Tablet
     /*Estilo de Producto Tablet*/
 
+    .productos {
+        padding: 5%;
+    }
     .velas {
         @include flex (column, center, center);
         align-items: center;
@@ -223,7 +226,9 @@ main {
 
 //Estilo de Producto Mobile
 /*Estilo de Producto Mobile*/
-
+.productos {
+    padding: 5%;
+}
 .velas {
     @include flex (column, center, center);
     align-items: center;

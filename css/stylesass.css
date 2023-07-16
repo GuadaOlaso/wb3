@@ -214,6 +214,9 @@ main {
         font-family: "Adam Bold"; }
 
 /*Estilo de Producto*/
+.productos {
+  padding: 5%; }
+
 .velas, .bombondifusor {
   margin: 3%;
   text-align: center;
@@ -225,11 +228,11 @@ main {
   .velas .vidrio:hover, .bombondifusor .vidrio:hover, .bombondifusor .bombon:hover, .bombondifusor .difusor:hover {
     width: 105%; }
   .velas .vidrio img, .bombondifusor .vidrio img, .bombondifusor .bombon img, .bombondifusor .difusor img {
-    width: 40%; }
+    width: 50%; }
   .velas .ceramica:hover, .bombondifusor .ceramica:hover {
     width: 105%; }
   .velas .ceramica img, .bombondifusor .ceramica img {
-    width: 38%; }
+    width: 47.5%; }
   .velas h2, .bombondifusor h2 {
     margin: 3%;
     font-size: 3rem; }
@@ -250,10 +253,10 @@ main {
     text-align: justify; }
 
 .bombondifusor .bombon img {
-  width: 40.5%; }
+  width: 50%; }
 
 .bombondifusor .difusor img {
-  width: 38%; }
+  width: 47%; }
 
 .botoncontacto {
   background-color: #404041;
@@ -403,6 +406,8 @@ main {
     font-family: "Adam Bold";
     padding: 5%; }
   /*Estilo de Producto Tablet*/
+  .productos {
+    padding: 5%; }
   .velas, .bombondifusor {
     display: flex;
     flex-direction: column;
@@ -520,6 +525,8 @@ main {
   main .somos, main .hacemos {
     margin: 8%; }
   /*Estilo de Producto Mobile*/
+  .productos {
+    padding: 5%; }
   .velas, .bombondifusor {
     display: flex;
     flex-direction: column;

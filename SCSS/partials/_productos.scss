@@ -1,6 +1,9 @@
 // Estilo de Producto
 /*Estilo de Producto*/
 
+.productos {
+    padding: 5%;
+}
 .velas {
     margin: 3%;
     text-align: center;
@@ -14,15 +17,15 @@
             width: 105%;
         }
         img {
-            width: 40%;
+            width: 50%;
         }
     }
-    .ceramica {
+    .ceramica { 
         &:hover{
             width: 105%;
         }
         img {
-            width: 38%;
+            width: 47.5%;
         }
     }
     h2 {
@@ -51,13 +54,13 @@
     .bombon {
         @extend .vidrio;
         img {
-            width: 40.5%;
+            width: 50%;
         }
     }
     .difusor {
         @extend .vidrio;
         img {
-            width: 38%;
+            width: 47%;
         }
     }
 }
